@@ -6,13 +6,14 @@
 
 <meta charset="UTF-8">
 
-<title>Event Registration</title>
+<title>Restaurant</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.css">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
-
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="true.js"></script>
 </head>
 
 <body>
@@ -28,33 +29,26 @@
 
 </nav>
 
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-<script type="text/javascript">
-
-$(function(){
-    
-$('li').click(function(){
-        
-$('li.active').removeClass('active');
-        
-$(this).addClass('active');
-    });
-});
-</script>
-
 </header>
 <div id="section1" >
-<div class="container">
+
 <h1>Welcome!!</h1><br>
+<h2>Nothing brings people together like good food.<h2>
 
 </div>
-</div>
-<label for="menu">Food items</label><br><br>
+<div class="container">
+<label for="menu"></label><br><br>
   <select name="menu" id="menu"><br><br>
     <option value="Select food item">Select food item</option>
-   
   </select>
+ <div class="mt-5 row">
+      <div class="card col-md-8 offset-md-2" style="width: 18rem;">
+        <div class="card-body" id="dataholder">
+
+        </div>
+      </div>
+    </div>
+</div>
 <br><br>
 <div  id="footer" class="footer-main-div">
 <center><div class="footer-social-icons">
@@ -62,16 +56,9 @@ $(this).addClass('active');
 <a href="#" class="fa fa-youtube"></a>
 <a href="#" class="fa fa-google"></a>
 </div></center>
-
-
-<div class="footer-bottom">
-<p>Design by:<a href="#">Mansi codebuild</a></p>
-</div>
 </footer>
 
 </div>
-
-
 
 </body>
 </html>
